@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 2026 - Dev Verma</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/profile.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Simplified Background -->
+    <div class="animated-background">
+        <div class="bg-gradient"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">DV</span>
+                <span class="logo-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#posters" class="nav-link">Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#contact" class="nav-button">Let's Talk</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Decorative Elements -->
+    <div class="corner-dots top-left">
+        <span class="dot filled"></span>
+    </div>
+    <div class="corner-dots top-right">
+        <span class="dot filled"></span>
+        <span class="dot outline"></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="year-badge">
+                <span class="dot outline"></span>
+                <span class="year">2026</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-text">PORTFOLIO</span>
+            </h1>
+            <div class="author-badge">
+                <span class="dot filled"></span>
+                <span class="author-name">Dev Verma</span>
+            </div>
+
+            <!-- Inspirational Quote -->
+            <div class="hero-quote">
+                <p class="quote-text">"Good design is invisible."</p>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Posters Section -->
+    <section class="posters-section" id="posters">
+        <div class="section-header">
+            <span class="sparkle">✦</span>
+            <div class="header-line"></div>
+        </div>
+        <h2 class="section-title">PERSONAL PROJECTS</h2>
+        <div class="section-subtitle">
+            <span class="line"></span>
+            <span class="subtitle-text">Browse by Category</span>
+            <span class="line"></span>
+        </div>
+
+        <!-- Category Navigation -->
+        <div class="category-nav">
+            <button class="category-btn active" data-category="posters">
+                <span class="category-icon">🎨</span>
+                <span class="category-label">Posters</span>
+            </button>
+            <button class="category-btn" data-category="thumbnails">
+                <span class="category-icon">🖼️</span>
+                <span class="category-label">Thumbnails</span>
+            </button>
+            <button class="category-btn" data-category="designs">
+                <span class="category-icon">✨</span>
+                <span class="category-label">Designs</span>
+            </button>
+            <button class="category-btn" data-category="others">
+                <span class="category-icon">🎯</span>
+                <span class="category-label">Others</span>
+            </button>
+        </div>
+
+        <!-- Gallery Containers for each category -->
+        <div class="categories-container">
+            <!-- Posters Gallery -->
+            <div class="gallery-container active" data-category-content="posters">
+                <div class="gallery-header">
+                    <span class="sparkle">✦</span>
+                    <h3 class="gallery-title">POSTERS</h3>
+                    <div class="header-line-right">
+                        <span class="line"></span>
+                        <span class="gallery-subtitle">Creative poster designs</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-title="BMW M4" data-src="assets/images/BMW-M4.png">
+                        <img class="item-image" src="assets/images/BMW-M4.png" alt="BMW M4">
+                        <div class="item-overlay">
+                            <span class="item-title">BMW M4</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Porsche GT3 911" data-src="assets/images/GT3-911.png">
+                        <img class="item-image" src="assets/images/GT3-911.png" alt="Porsche GT3 911">
+                        <div class="item-overlay">
+                            <span class="item-title">Porsche GT3 911</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Mustang" data-src="assets/images/mustang.png">
+                        <img class="item-image" src="assets/images/mustang.png" alt="Mustang">
+                        <div class="item-overlay">
+                            <span class="item-title">Mustang</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Watch Poster" data-src="assets/images/watch-poster.png">
+                        <img class="item-image" src="assets/images/watch-poster.png" alt="Watch Poster">
+                        <div class="item-overlay">
+                            <span class="item-title">Watch Poster</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Water Bottle" data-src="assets/images/water-bottle.png">
+                        <img class="item-image" src="assets/images/water-bottle.png" alt="Water Bottle">
+                        <div class="item-overlay">
+                            <span class="item-title">Water Bottle</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Mockup Poster" data-src="assets/images/mokups-poster.png">
+                        <img class="item-image" src="assets/images/mokups-poster.png" alt="Mockup Poster">
+                        <div class="item-overlay">
+                            <span class="item-title">Mockup Poster</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Briyani Poster" data-src="assets/images/briyani.png">
+                        <img class="item-image" src="assets/images/briyani.png" alt="Briyani Poster">
+                        <div class="item-overlay">
+                            <span class="item-title">Briyani Poster</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Magazine Design" data-src="assets/images/mag2.png">
+                        <img class="item-image" src="assets/images/mag2.png" alt="Magazine Design">
+                        <div class="item-overlay">
+                            <span class="item-title">Magazine Design</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Mockup 2" data-src="assets/images/mokup2.png">
+                        <img class="item-image" src="assets/images/mokup2.png" alt="Mockup 2">
+                        <div class="item-overlay">
+                            <span class="item-title">Mockup 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Photography" data-src="assets/images/pexels-stefanstefancik-91227.png">
+                        <img class="item-image" src="assets/images/pexels-stefanstefancik-91227.png" alt="Photography">
+                        <div class="item-overlay">
+                            <span class="item-title">Photography</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Blue Air" data-src="assets/images/BLUE-B.png">
+                        <img class="item-image" src="assets/images/BLUE-B.png" alt="Blue Air">
+                        <div class="item-overlay">
+                            <span class="item-title">Blue Air</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Nike Blue Air" data-src="assets/images/nike-blue-air.png">
+                        <img class="item-image" src="assets/images/nike-blue-air.png" alt="Nike Blue Air">
+                        <div class="item-overlay">
+                            <span class="item-title">Nike Blue Air</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Air Jordan" data-src="assets/images/air.png">
+                        <img class="item-image" src="assets/images/air.png" alt="Air Jordan">
+                        <div class="item-overlay">
+                            <span class="item-title">Air Jordan</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Hoodie Design" data-src="assets/images/hoodei.png">
+                        <img class="item-image" src="assets/images/hoodei.png" alt="Hoodie Design">
+                        <div class="item-overlay">
+                            <span class="item-title">Hoodie Design</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Rakhi" data-src="assets/images/rakhi.png">
+                        <img class="item-image" src="assets/images/rakhi.png" alt="Rakhi">
+                        <div class="item-overlay">
+                            <span class="item-title">Rakhi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thumbnails Gallery -->
+            <div class="gallery-container" data-category-content="thumbnails">
+                <div class="gallery-header">
+                    <span class="sparkle">✦</span>
+                    <h3 class="gallery-title">THUMBNAILS</h3>
+                    <div class="header-line-right">
+                        <span class="line"></span>
+                        <span class="gallery-subtitle">Video & Content thumbnails</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-title="Thumbnail" data-src="assets/images/thumbnail.png">
+                        <img class="item-image" src="assets/images/thumbnail.png" alt="Thumbnail">
+                        <div class="item-overlay">
+                            <span class="item-title">Thumbnail</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Monet Thumbnail" data-src="assets/images/MONET-THUM.png">
+                        <img class="item-image" src="assets/images/MONET-THUM.png" alt="Monet Thumbnail">
+                        <div class="item-overlay">
+                            <span class="item-title">Monet Thumbnail</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designs Gallery -->
+            <div class="gallery-container" data-category-content="designs">
+                <div class="gallery-header">
+                    <span class="sparkle">✦</span>
+                    <h3 class="gallery-title">DESIGNS</h3>
+                    <div class="header-line-right">
+                        <span class="line"></span>
+                        <span class="gallery-subtitle">Product & graphic designs</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-title="Design 1" data-src="assets/images/Untitled-1.png">
+                        <img class="item-image" src="assets/images/Untitled-1.png" alt="Design 1">
+                        <div class="item-overlay">
+                            <span class="item-title">Design 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design Variant 1" data-src="assets/images/Untitled-1 (1).png">
+                        <img class="item-image" src="assets/images/Untitled-1 (1).png" alt="Design Variant 1">
+                        <div class="item-overlay">
+                            <span class="item-title">Design Variant 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design Variant 2" data-src="assets/images/Untitled-1 (2).png">
+                        <img class="item-image" src="assets/images/Untitled-1 (2).png" alt="Design Variant 2">
+                        <div class="item-overlay">
+                            <span class="item-title">Design Variant 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design Variant 3" data-src="assets/images/Untitled-1 (3).png">
+                        <img class="item-image" src="assets/images/Untitled-1 (3).png" alt="Design Variant 3">
+                        <div class="item-overlay">
+                            <span class="item-title">Design Variant 3</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design 2" data-src="assets/images/Untitled-2.png">
+                        <img class="item-image" src="assets/images/Untitled-2.png" alt="Design 2">
+                        <div class="item-overlay">
+                            <span class="item-title">Design 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design 2 Variant" data-src="assets/images/Untitled-2 (1).png">
+                        <img class="item-image" src="assets/images/Untitled-2 (1).png" alt="Design 2 Variant">
+                        <div class="item-overlay">
+                            <span class="item-title">Design 2 Variant</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Design 2" data-src="assets/images/2-png.png">
+                        <img class="item-image" src="assets/images/2-png.png" alt="Design 2">
+                        <div class="item-overlay">
+                            <span class="item-title">Design 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Others Gallery -->
+            <div class="gallery-container" data-category-content="others">
+                <div class="gallery-header">
+                    <span class="sparkle">✦</span>
+                    <h3 class="gallery-title">OTHERS</h3>
+                    <div class="header-line-right">
+                        <span class="line"></span>
+                        <span class="gallery-subtitle">Miscellaneous creative works</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-title="Ganesh Ji" data-src="assets/images/ganesh-ji.png">
+                        <img class="item-image" src="assets/images/ganesh-ji.png" alt="Ganesh Ji">
+                        <div class="item-overlay">
+                            <span class="item-title">Ganesh Ji</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Matte Painting" data-src="assets/images/neture (1).png">
+                        <img class="item-image" src="assets/images/neture (1).png" alt="Matte Painting">
+                        <div class="item-overlay">
+                            <span class="item-title">Matte Painting</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-title="Yu Design" data-src="assets/images/yu.png-3.png">
+                        <img class="item-image" src="assets/images/yu.png-3.png" alt="Yu Design">
+                        <div class="item-overlay">
+                            <span class="item-title">Yu Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Decorations -->
+        <div class="side-dots left">
+            <span class="dot filled"></span>
+            <span class="dot outline"></span>
+        </div>
+        <div class="side-dots right">
+            <span class="dot filled"></span>
+            <span class="dot outline"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="about-header">
+            <span class="section-label">Get to know me</span>
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="title-line">
+                <span class="line-segment"></span>
+                <span class="line-dot"></span>
+                <span class="line-segment"></span>
+            </div>
+        </div>
+
+        <div class="about-tiles-container">
+            <!-- Profile Tile -->
+            <div class="about-tile profile-tile">
+                <div class="tile-glow"></div>
+                <div class="tile-content">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <img src="assets/images/profile.jpg" alt="Dev Verma Profile Picture" class="profile-pic">
+                        </div>
+                    </div>
+                    <h3 class="profile-name">DEV VERMA</h3>
+                    <div class="profile-tags">
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">2D Illustration</span>
+                        <span class="tag">Social Media</span>
+                    </div>
+                    <p class="profile-bio">
+                        Passionate graphic designer specializing in brand identity and visual storytelling. Creating designs that blend aesthetics with purpose.
+                    </p>
+                    <div class="profile-skills">
+                        <h4 class="skills-heading">Skills & Expertise</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Adobe Illustrator</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Premiere Pro</span>
+                            <span class="skill-tag">After Effects</span>
+                            <span class="skill-tag">Brand Identity</span>
+                            <span class="skill-tag">Typography</span>
+                            <span class="skill-tag">Color Theory</span>
+                            <span class="skill-tag">Layout Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Tile -->
+            <div class="about-tile education-tile">
+                <div class="tile-glow"></div>
+                <div class="tile-content">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <h4 class="tile-title">EDUCATION</h4>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <span class="year-tag">2023</span>
+                            <h5 class="item-title">National Institute of Open Schooling (NIOS)</h5>
+                            <p class="item-desc">HIGH SCHOOL</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year-tag">2026</span>
+                            <h5 class="item-title">MAAC</h5>
+                            <p class="item-desc">Designing Carrier Course</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Tile -->
+            <div class="about-tile experience-tile">
+                <div class="tile-glow"></div>
+                <div class="tile-content">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h4 class="tile-title">EXPERIENCE</h4>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <span class="year-tag">2024</span>
+                            <h5 class="item-title">Fresher designer</h5>
+                            <p class="item-desc"></p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year-tag">2025</span>
+                            <h5 class="item-title"></h5>
+                            <p class="item-desc">First prize at Design Competetion at MAAC </p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="year-tag">2025</span>
+                            <h5 class="item-title">Freelance Design</h5>
+                            <p class="item-desc">Posters, Social Media, Magazines</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Software Tile - Large -->
+            <div class="about-tile software-tile">
+                <div class="tile-glow"></div>
+                <div class="tile-content">
+                    <div class="tile-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="13.5" cy="6.5" r="2.5"/>
+                            <circle cx="19" cy="17" r="2"/>
+                            <circle cx="5" cy="17" r="3"/>
+                            <path d="M12 2v4M19 15v-3.5a2 2 0 0 0-2-2h-4"/>
+                            <path d="M5 14v-3.5a2 2 0 0 1 2-2h4"/>
+                        </svg>
+                    </div>
+                    <h4 class="tile-title">DESIGN SOFTWARE</h4>
+                    <div class="software-grid">
+                        <div class="software-item" data-hover title="Adobe Illustrator - Vector Graphics">
+                            <div class="software-icon ai">
+                                <img src="assets/images/illustrator.png" alt="Illustrator" width="50" height="50">
+                            </div>
+                            <span class="software-name">Illustrator</span>
+                        </div>
+                        <div class="software-item" data-hover title="Adobe Photoshop - Photo Editing">
+                            <div class="software-icon ps">
+                                <img src="assets/images/adobe-photoshop-logo.png" alt="Photoshop" width="50" height="50">
+                            </div>
+                            <span class="software-name">Photoshop</span>
+                        </div>
+                        <div class="software-item" data-hover title="Adobe Premiere Pro - Video Editing">
+                            <div class="software-icon pr">
+                                <img src="assets/images/Premiere-Pro.png" alt="Premiere Pro" width="50" height="50">
+                            </div>
+                            <span class="software-name">Premiere Pro</span>
+                        </div>
+                        <div class="software-item" data-hover title="Adobe After Effects - Motion Graphics">
+                            <div class="software-icon ae">
+                                <img src="assets/images/after effect.png" alt="After Effects" width="50" height="50">
+                            </div>
+                            <span class="software-name">After Effects</span>
+                        </div>
+                        <div class="software-item" data-hover title="Canva - Graphic Design Platform">
+                            <div class="software-icon canva">
+                                <img src="assets/images/Canva-Emblem.png" alt="Canva" width="50" height="50">
+                            </div>
+                            <span class="software-name">Canva</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="section-title">LET'S CONNECT</h2>
+                <p class="contact-subtitle">Have a project in mind? Let's create something amazing together.</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Card - Email -->
+                <a href="mailto:dev.verma@example.com" class="contact-card">
+                    <div class="card-glow"></div>
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <h4 class="contact-card-title">Email</h4>
+                    <span class="contact-card-text">devv8786@gmail.com</span>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Contact Card - Phone -->
+                <a href="tel:+919876543210" class="contact-card">
+                    <div class="card-glow"></div>
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    </div>
+                    <h4 class="contact-card-title">Phone</h4>
+                    <span class="contact-card-text">+91 78950 80847</span>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Contact Card - WhatsApp -->
+                <a href="https://wa.me/917895080847" target="_blank" class="contact-card">
+                    <div class="card-glow"></div>
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </div>
+                    <h4 class="contact-card-title">WhatsApp</h4>
+                    <span class="contact-card-text">+91 78950 80847</span>
+                    <div class="card-arrow">→</div>
+                </a>
+
+                <!-- Contact Card - LinkedIn -->
+                <a href="https://www.linkedin.com/in/manya-sharma-2a354039a" target="_blank" class="contact-card">
+                    <div class="card-glow"></div>
+                    <div class="contact-card-icon">
+                        <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <h4 class="contact-card-title">LinkedIn</h4>
+                    <span class="contact-card-text">linkedin.com/in/devverma</span>
+                    <div class="card-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">DV</span>
+                    <span class="footer-tagline">Creative Designer</span>
+                </div>
+                <div class="footer-divider"></div>
+                <div class="footer-credit">
+                    <p class="designed-by">
+                        <span class="sparkle">✦</span>
+                        Designed by DEV & Developed by Rudransha
+                        <span class="sparkle">✦</span>
+                    </p>
+                    <p class="copyright">© 2026 Dev Verma. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/917895080847" class="social-link" aria-label="WhatsApp" target="_blank">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-glow"></div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <button class="modal-close" id="modalClose">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="modal-content">
+            <h3 class="modal-title" id="modalTitle"></h3>
+            <img class="modal-image" id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
